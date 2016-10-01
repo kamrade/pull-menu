@@ -6,8 +6,12 @@ var alertConsole = function() {
 };
 
 
-var $red = document.querySelector(".red");
+var $grid = document.querySelector(".grid");
+var $red  = document.querySelector(".red");
 
-$red.addEventListener("click", function(){
-	console.log('pushed red');
+$grid.addEventListener("click", function(e){
+	console.log("grid");
+	e.preventDefault();
+	
+
 }, false);

@@ -43,6 +43,12 @@ gulp.task('jade', function(){
 		.pipe(connect.reload());
 });
 
+gulp.task('img', function(){
+	gulp.src('src/img/**/*')
+		.pipe(gulp.dest('./dist/css/img'))
+		.pipe(connect.reload());
+});
+
 // gulp.task('html', function(){
 // 	gulp.src('index.html')
 // 		.pipe(connect.reload());
@@ -53,6 +59,7 @@ gulp.task('watch', function(){
 	gulp.watch('src/sass/**/*.scss', ['sass']);
 	gulp.watch('src/jade/**/*.jade', ['jade']);
 	gulp.watch('src/jade/**/*.html', ['jade']);
+	gulp.watch('src/img/**/*',		 ['img']);
 	gulp.watch('src/js/*.js', ['js']);
 });
 

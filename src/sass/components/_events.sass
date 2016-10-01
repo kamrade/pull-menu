@@ -13,7 +13,7 @@ h1
 	height: $s-height
 	margin: 32px auto
 
-.square-list
+.grid
 	li
 		list-style: none
 		color: #fff
@@ -24,13 +24,23 @@ h1
 		text-align: center
 		float: left
 		border: 1px solid white
-		cursor: pointer
 		opacity: .8
 		&:hover
 			opacity: 1
+		img
+			width: floor($s-width/3)
+			height: floor($s-width/3)
 
 .red
 	background-color: rgba(red, 0.8)
+
+	span.child
+		color: white
+		display: block
+		float: left
+		width: 100%
+		height: 100%
+		position: relative
 
 .darksalmon
 	background-color: rgba(darksalmon, 0.8)
