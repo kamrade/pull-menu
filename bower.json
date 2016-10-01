@@ -1,0 +1,24 @@
+{
+  "name": "js-events",
+  "authors": [
+    "Denis Michailov <kamrad.reg@gmail.com>"
+  ],
+  "description": "js events training",
+  "main": "",
+  "moduleType": [],
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.sass": "^3.0.0",
+    "bourbon": "^4.2.7"
+  }
+}
