@@ -1,4 +1,4 @@
-$s-width: 321px
+$s-width: 330px
 $s-height: $s-width
 
 
@@ -8,14 +8,42 @@ h1
 	text-align: center
 	margin-top: 32px
 
+.app
+	margin: 32px auto
+	width: 2*$s-width
+
 .rubic
 	width: $s-width
 	height: $s-height
-	margin: 32px auto
+	user-select: none
+	float: left
+
+.preview
+	float: left
+	width: $s-width
+	height: $s-height
+	background: #efefef
+	position: relative
+
+.preview-text
+	letter-spacing: 1px
+	text-align: center
+	position: relative
+	line-height: $s-height
+	color: white
+	font-size: 48px
+	font-weight: 300
+	background-color: rgba(red, 0.5)
+
+.description
+	margin-top: 16px
 
 .grid
+	width: $s-width
+	+clearfix
 	li
 		list-style: none
+		position: relative
 		color: #fff
 		box-sizing: border-box
 		width: floor($s-width/3)
@@ -23,13 +51,15 @@ h1
 		line-height: floor($s-width/3)
 		text-align: center
 		float: left
-		border: 1px solid white
 		opacity: .8
+		+transition
+		// overflow: hidden
 		&:hover
 			opacity: 1
 		img
 			width: floor($s-width/3)
 			height: floor($s-width/3)
+			cursor: pointer
 
 .red
 	background-color: rgba(red, 0.8)
