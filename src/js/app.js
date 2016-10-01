@@ -5,6 +5,9 @@ var alertConsole = function() {
 	console.log("pushed red");
 };
 
-document.querySelector('.red').onclick = function(){
-	console.log('red pushed');
-};
+
+var $red = document.querySelector(".red");
+
+$red.addEventListener("click", function(){
+	console.log('pushed red');
+}, false);
