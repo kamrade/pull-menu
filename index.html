@@ -14,22 +14,28 @@
   <body>
     <h1>JS Events</h1>
     <div class="app">
-      <div class="rubic">
-        <ul class="grid">
-          <li data-color="red" class="box red"><img src="./dist/css/img/pic-01.jpg" alt="1"></li>
-          <li data-color="darksalmon" class="box darksalmon"><img src="./dist/css/img/pic-02.jpg" alt="2"></li>
-          <li data-color="goldenrod" class="box goldenrod"><img src="./dist/css/img/pic-03.jpg" alt="3"></li>
-          <li data-color="green" class="box green"><img src="./dist/css/img/pic-04.jpg" alt="4"></li>
-          <li data-color="lightblue" class="box lightblue"><img src="./dist/css/img/pic-05.jpg" alt="5"></li>
-          <li data-color="blue" class="box blue"><img src="./dist/css/img/pic-06.jpg" alt="6"></li>
-          <li data-color="violet" class="box violet"><img src="./dist/css/img/pic-07.jpg" alt="7"></li>
-          <li data-color="violetred" class="box violetred"><img src="./dist/css/img/pic-08.jpg" alt="8"></li>
-          <li data-color="wheat" class="box wheat"><img src="./dist/css/img/pic-09.jpg" alt="9"></li>
+      <div class="header">
+        <ul class="menu">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li class="reload">reload<i class="loader-icon"></i></li>
         </ul>
-        <p class="description"></p>
+        <div class="pullmenu-icon"></div>
       </div>
-      <div class="preview"></div>
+      <div class="pages">
+        <div class="page page-1"></div>
+        <div class="page page-2"></div>
+        <div class="page page-3"></div>
+        <div class="page page-4"></div>
+      </div>
     </div>
+    <div class="control">
+      <button id="previous" class="btn previous">Previous</button>
+      <button id="next" class="btn next">Next</button>
+    </div>
+    <script type="text/javascript" src="dist/js/classie.js"></script>
     <script type="text/javascript" src="dist/js/app.js"></script>
   </body>
 </html>

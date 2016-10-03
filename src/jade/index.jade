@@ -14,27 +14,24 @@ html(lang="en")
 	body
 		h1 JS Events
 		div.app
-			div.rubic
-				ul.grid
-					li(data-color="red").box.red
-						img(src="./dist/css/img/pic-01.jpg" alt="1")
-					li(data-color="darksalmon").box.darksalmon
-						img(src="./dist/css/img/pic-02.jpg" alt="2" )
-					li(data-color="goldenrod").box.goldenrod
-						img(src="./dist/css/img/pic-03.jpg" alt="3" )
-					li(data-color="green").box.green
-						img(src="./dist/css/img/pic-04.jpg" alt="4" )
-					li(data-color="lightblue").box.lightblue
-						img(src="./dist/css/img/pic-05.jpg" alt="5" )
-					li(data-color="blue").box.blue
-						img(src="./dist/css/img/pic-06.jpg" alt="6" )
-					li(data-color="violet").box.violet
-						img(src="./dist/css/img/pic-07.jpg" alt="7" )
-					li(data-color="violetred").box.violetred
-						img(src="./dist/css/img/pic-08.jpg" alt="8" )
-					li(data-color="wheat").box.wheat
-						img(src="./dist/css/img/pic-09.jpg" alt="9" )
-				p.description
-			div.preview
+			div.header
+				ul.menu
+					li item 1
+					li item 2
+					li item 3
+					li item 4
+					li.reload reload
+						i.loader-icon
+				div.pullmenu-icon
+			div.pages
+				div.page.page-1
+				div.page.page-2
+				div.page.page-3
+				div.page.page-4
+		div.control
+			button#previous.btn.previous Previous
+			button#next.btn.next Next
+				
 
+		script(type="text/javascript" src="dist/js/classie.js")
 		script(type="text/javascript" src="dist/js/app.js")
