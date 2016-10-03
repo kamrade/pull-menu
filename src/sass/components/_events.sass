@@ -7,6 +7,9 @@ $s-li-padding: 16px
 
 $c-main: #333
 
+body
+	user-select: none
+
 h1
 	text-align: center
 	margin-top: 32px
@@ -92,3 +95,23 @@ h1
 		transition: opacity .2s ease-out
 		width: $s-width - $s-li-padding*2
 		text-align: center
+
+.loader-icon
+	box-sizing: border-box
+	margin: 0 auto
+	position: relative
+	top: 12px
+	width: 20px
+	height: 20px
+	border-radius: 10px
+	border: 2px solid #fff
+	border-bottom-color: transparent
+	display: block
+	&.anim
+		animation: loader 1s infinite linear
+
+@keyframes loader
+	0%
+		transform: rotate(0)
+	100%
+		transform: rotate(359deg)

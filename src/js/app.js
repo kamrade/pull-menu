@@ -41,11 +41,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			itemActive++;
 			setActiveItem(itemActive);
 		} else {
-			console.log("this is the last");
-			$menu.style.left = (-1*itemWidth*itemActive-70) + 'px';
-			setTimeout(function(){
-				setActiveItem(itemActive);
-			}, 100);
+
 		}
 	};
 
@@ -54,11 +50,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 			itemActive--;
 			setActiveItem(itemActive);
 		} else {
-			console.log("this is the first");
-			$menu.style.left = (-1*itemWidth*itemActive+70) + 'px';
-			setTimeout(function(){
-				setActiveItem(itemActive);
-			}, 100);
+
 		}
 	};
 
@@ -88,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function(e){
 	};
 
 	var menuMouseUp = function(e){
+		itemActive = 0;
+		setActiveItem();
 		classie.add($header, 'transition');
 		$header.style.height = 48 + 'px';
 		document.removeEventListener('mousemove', menuMouseMove, false);
